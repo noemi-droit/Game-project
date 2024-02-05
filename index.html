@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--font awesome and google fonts-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway%7CRighteous" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Document</title>
 </head>
@@ -13,23 +14,16 @@
 
     <div class="game-area">
         <div class="controls-area">
-            <button class="btn btn--big btn--hand">
+            <button data-type="rock" class="btn btn--big btn--hand">
                 <i class="fa-regular fa-hand-back-fist"></i>   
             </button>
-            <button class="btn btn--big btn--hand">
+            <button data-type="paper" class="btn btn--big btn--hand">
                 <i class="fa-regular fa-hand"></i>
             </button>
-            <button class="btn btn--big btn--hand">
+            <button data-type="scissors" class="btn btn--big btn--hand">
                 <i class="fa-regular fa-hand-scissors"></i>     
             </button>
             
-    
-        <div class="options">
-            <button type="button">ROCK</button>
-            <button type="button">PAPER</button>
-            <button type="button">SCISSORS</button>
-
-        </div>
         
         <div class="score-area">
         <p class="scores">Player <span id="score">0</span></p>
