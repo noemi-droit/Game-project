@@ -13,7 +13,7 @@
     <h1 class="heading">Love Games</h1>
 
     <div class="game-area">
-        <div class="controls-area">
+        <div class="options-area">
             <button data-type="rock" class="btn btn--big btn--green">
                 <i class="fa-regular fa-hand-back-fist"></i>   
             </button>
@@ -24,21 +24,23 @@
                 <i class="fa-regular fa-hand-scissors"></i>     
             </button>  
         </div>
-
-        <div class="question-area">
-            <span id="operand1">0</span>
-            <span id="operator">x</span>
-            <span id="operand2">0</span>
-            <span>=</span>
-            <p class="answer-message">Enter Answer:</p>
-            <input id="answer-box" type="number">
-        </div>
-        <button class="btn btn--gray">Submit Answer</button>
     </div>
 
+    <div class="question-area">
+        <span id="Player">0</span>
+        <span id="operator">vs</span>
+        <span id="Computer">0</span>
+        <span>=</span>
+        <p class="answer-message">Enter Answer:</p>
+        <input id="answer-box" type="number">
+    </div>
+    <button class="btn btn--gray">Submit Answer</button>
+    </div>
+    
         <div class="score-area">
-        <p class="scores">Player <span id="score">0</span></p>
-        <p class="scores">Computer <span id="incorrect">0</span></p>
+            <div>Player<span id="result-score">0</span</div>
+            <div>Computer<span id="result-score">0</span</div>
+        
         </div>
     <script src="assets/js/script.js"></script>
 </body>
