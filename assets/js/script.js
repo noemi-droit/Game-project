@@ -6,8 +6,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
     for (let button of buttons) {
         button.addEventListener("click", function() {
-            if (this.getAttribute("data-type") === "submit") {
-                alert("You clicked Submit!");
+            if (this.getAttribute("data-type") === "result") {
+                alert("You clicked result!");
             } else {
                 let gameType = this.getAttribute("data-type");
                 runGame(gameType);
@@ -25,11 +25,11 @@ document.addEventListener("DOMContentLoaded", function() {
 function runGame(gameType) {
 
     // Creates two random numbers 
-    let num1 = Math.floor(Math.random() * 25) + 1;
-    let num2 = Math.floor(Math.random() * 25) + 1;
+    Math.floor(Math.random() * 3);
+    
 
-    if (gameType === "addition") {
-        displayAdditionQuestion(num1, num2);
+    if (gameType === "rock") {
+        displayrockQuestion(rock);
     } else {
         alert(`Unknown game type: ${gameType}`);
         throw `Unknown game type: ${gameType}. Aborting!`;
