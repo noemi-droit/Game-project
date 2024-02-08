@@ -3,7 +3,6 @@
 
 document.addEventListener("DOMContentLoaded", function() {
     let buttons = document.getElementsByTagName("button");
-
     for (let button of buttons) {
         button.addEventListener("click", function() {
             if (this.getAttribute("data-type") === "result") {
@@ -14,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         });
     }
-    runGame("rock");
+    
 
 });
 
@@ -24,37 +23,38 @@ document.addEventListener("DOMContentLoaded", function() {
  */
 function runGame(gameType) {
 
-    // Creates two random numbers 
-    Math.floor(Math.random() * 3);
     
-
     if (gameType === "rock") {
-        displayrockQuestion(rock);
+ //     compterType 
     } else {
         alert(`Unknown game type: ${gameType}`);
         throw `Unknown game type: ${gameType}. Aborting!`;
     }
-    
-    
+      
 }
-
-
-
-function displayRockOption(){
-    document.getElementById('operand1').textContent = operand1;
-    document.getElementById('operand2').textContent = operand2;
-    document.getElementById('operator').textContent = "+";
-    
-    
-}
-
-function displayPaperOption(){
-
-    
+function playerDisplay() {
 
 }
 
-function displayScissorOption(){
-   
-    }
+function computerDisplay() {
+
+}
+
+function resultDisplay() {
+
+}
+
+
+function displayRockButton() {
+
+}
+
+function displayPaperButton() {
+
+}
+
+function displayScissorsButton() {
+    
+}
+
 
